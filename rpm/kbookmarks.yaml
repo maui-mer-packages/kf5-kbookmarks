@@ -1,5 +1,5 @@
-Name         : kf5-kbookmarks
-Version      : 5.0.0
+Name         : kbookmarks
+Version      : 5.1.0
 Release      : 1
 Group        : System/Base
 License      : GPLv2+
@@ -25,11 +25,11 @@ PkgBR:
     - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
-    - kf5-kconfigwidgets-devel
-    - kf5-kcoreaddons-devel
-    - kf5-kiconthemes-devel
-    - kf5-kwidgetsaddons-devel
-    - kf5-kxmlgui-devel
+    - kconfigwidgets-devel
+    - kcoreaddons-devel
+    - kiconthemes-devel
+    - kwidgetsaddons-devel
+    - kxmlgui-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -59,14 +59,14 @@ SubPackages:
         The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
       Requires:
-          - kf5-kconfigwidgets-devel
-          - kf5-kcoreaddons-devel
-          - kf5-kiconthemes-devel
-          - kf5-kwidgetsaddons-devel
-          - kf5-kxmlgui-devel
+          - kconfigwidgets-devel
+          - kcoreaddons-devel
+          - kiconthemes-devel
+          - kwidgetsaddons-devel
+          - kxmlgui-devel
       Files:
           - "%{_kf5_includedir}/kbookmarks_version.h"
           - "%{_kf5_includedir}/KBookmarks"
           - "%{_kf5_libdir}/libKF5Bookmarks.so"
-          - "%{_kf5_libdir}/cmake/KF5Bookmarks"
-          - "%{_datadir}/qt5/mkspecs/modules/qt_KBookmarks.pri"
+          - "%{_kf5_cmakedir}/KF5Bookmarks"
+          - "%{_kf5_mkspecsdir}/qt_KBookmarks.pri"
