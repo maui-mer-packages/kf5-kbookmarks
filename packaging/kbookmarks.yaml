@@ -7,7 +7,6 @@ Summary      : KDE Frameworks 5 Tier 3 addon for bookmarks manipulation
 Description  : |
   KDE Frameworks 5 Tier 3 addon for bookmarks manipulation
 URL          : http://www.kde.org
-SetupOptions : -q -n %{name}-%{version}/upstream
 
 Sources:
     - "%{name}-%{version}.tar.xz"
