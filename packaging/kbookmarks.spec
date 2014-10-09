@@ -31,6 +31,7 @@ BuildRequires:  pkgconfig(Qt5Test)
 BuildRequires:  kf5-rpm-macros
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-tools
+BuildRequires:  qt5-qttools-linguist
 BuildRequires:  kconfigwidgets-devel
 BuildRequires:  kcoreaddons-devel
 BuildRequires:  kiconthemes-devel
